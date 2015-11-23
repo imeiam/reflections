@@ -1,0 +1,48 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Reduced my extra effort and save more time. Identified the additions and deletions removing the need to walkthrough entire file.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    We can keep track of the evolution of the application. Introduce changes and revert back to working state in case we are not able find bugs.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros: Reduces the no of commits. Make each commit meaningful. Helps stay with the rule 'one commit one logical change'
+    cons: might lead to loss of data if we fail to commit.
+    breaks the rule
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git is mainly used for software development. Each file might be interrelated
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git-log - Show commit logs
+    git log [<options>] [<revision range>] [[\--] <path>…​]
+
+
+    git-diff - Show changes between commits, commit and working tree, etc
+    git diff [options] [<commit>] [--] [<path>…​]
+    git diff [options] --cached [<commit>] [--] [<path>…​]
+    git diff [options] <commit> <commit> [--] [<path>…​]
+    git diff [options] <blob> <blob>
+    git diff [options] [--no-index] [--] <path> <path>
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Braches. They dont affect the master version. Easy to revert in case of bugs.
+    Checkout can be used to change the state of the application.
+
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Maintaining different version of a document. Develop a simple app with the code on github so i can view all the commits i made and learn the working.
