@@ -6,10 +6,6 @@ Commits - Checkpoints created by user.
 
 Git diff operates on commit.
 
-relationships in concept map: * type of .
-* part of.
-* operates on.
-
 one commit per logical change.
 
 tracking across multiple files.
@@ -211,3 +207,5 @@ Merging with github will always create a merge commit even if fast forward merge
 is possible.
 
 When done with modifying the new branch, do git pull branch-name
+
+Use "upstream" remote to avoid merge conflicts points at the main repo.
