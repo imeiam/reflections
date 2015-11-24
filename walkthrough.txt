@@ -167,4 +167,6 @@ git remote = to view and create remote
 
 git remote add - add a remote.
 
-if only one remote then name it - git remote add origin
+if only one remote then name it - git remote add origin url
+
+git push origin master
