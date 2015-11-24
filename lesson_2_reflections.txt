@@ -11,13 +11,43 @@ Value: Commit can be associated with only the modified files and not the others.
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+All the files that need to committed can be added to the staging area instead of individual commits if they are considered together as one logical change.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+branches dont affect the main branch. The production code is affected till merging. Failure in branches does not affect the master.
+
+
+
 How do the diagrams help you visualize the branch structure?
+
+Really helpful. Provides a clear working of git branches.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+A new merge commit node is created. The parent of this node is the tip of both the branches. This can be proved using git log where all the commit messages for both the branches is known.
+Each branch takes a separate path after commit. This is easier to depict in graphs.
+
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+
+pros: less programming effort.
+cons: Overhead for git. Its programmers choice to resolve conflicts.
+
+
+Lesson 3: --------------------------------
+
+Github:
+
+Password caching in terminal https://help.github.com/articles/caching-your-github-password-in-git/
+
+
+push pull remotes.
+
+Remote repo that can push and pull repos.
+
+if we already have commits then no need to create readme.md
+
+git remote = to view and create remote

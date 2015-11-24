@@ -95,3 +95,55 @@ git commit styling guide.
 Write your commit messages as it were a command.
 
 To delete git from dir: delete .git dir
+
+git diff
+with no args when used denotes difference between the staging area and working directory. staging area - working dir.
+
+git diff --staged
+repo - staging area
+
+git reset --hard
+clear everything in staging area and the working area.
+
+Branches: avoid linear fashion of commits.
+to add new features.
+Tip of a branch  - Last commit on a branch.
+
+Process of combing two commits - Merging.
+
+git branch  - To create and view branches.
+
+git branch  name - new branch  - name
+* near a branch indicated the current branch which the commit will affect.
+git checkout branchname selects that branch
+
+git log --graph --oneline master branchname
+
+each commit identifies its parent in the graph.
+So its easier to construct. Branch information is stored only by branch names.
+
+git checkout -b branch-name = two commands
+git branch branch-name
+git checkout branch-name
+
+using tip of branch1 and branch2 and the point where they diverged git can create a merge between.
+
+merged node contains information about both the parents two tips of the branches.
+called merging coin branch into the master branch.
+
+after merge we can delete the branch but commits will be there \.
+
+git merge master coins  coins to master.
+
+after merging git diff cannot be very effective as two commits can have different parents
+
+To avoid this we need to its parent. but thats not possible with git log
+So git show commit_id is used
+
+git branch -d branchname
+deletes only the branch not the commits as they will be accessible after merge.
+
+git merge conflicts occur when two branches have altered the lines of code.
+in that case special symbols will added to indicate common ancestor code.
+
+after resolving conflict, both modified git add, git status , git commit.
