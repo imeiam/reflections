@@ -35,19 +35,3 @@ manually?
 
 pros: less programming effort.
 cons: Overhead for git. Its programmers choice to resolve conflicts.
-
-
-Lesson 3: --------------------------------
-
-Github:
-
-Password caching in terminal https://help.github.com/articles/caching-your-github-password-in-git/
-
-
-push pull remotes.
-
-Remote repo that can push and pull repos.
-
-if we already have commits then no need to create readme.md
-
-git remote = to view and create remote
